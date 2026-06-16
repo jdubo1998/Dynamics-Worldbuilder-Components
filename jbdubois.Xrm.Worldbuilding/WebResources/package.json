@@ -1,0 +1,26 @@
+{
+  "name": "jbdubois.Xrm.Worldbuilding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run lint && webpack",
+    "build": "npm run lint && webpack",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@microsoft/eslint-plugin-power-apps": "^0.5.1",
+    "@types/xrm": "^9.0.94",
+    "@typescript-eslint/eslint-plugin": "^8.61.0",
+    "@typescript-eslint/parser": "^8.61.0",
+    "eslint": "^10.5.0",
+    "eslint-plugin-promise": "^7.3.0",
+    "ts-loader": "^9.6.0",
+    "typescript": "^6.0.3",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
+  }
+}

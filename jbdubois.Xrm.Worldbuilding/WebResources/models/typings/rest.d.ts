@@ -1,0 +1,56 @@
+declare namespace SDK {
+  namespace REST {
+    function createRecord(object: RestNS.jbdb_Character, type: "jbdb_Character", successCallback: (result: RestNS.jbdb_CharacterResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_Character", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_Character", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_CharacterResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_Character, type: "jbdb_Character", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_Character", options: string, successCallback: (result: RestNS.jbdb_CharacterResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_CharacterRelation, type: "jbdb_CharacterRelation", successCallback: (result: RestNS.jbdb_CharacterRelationResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_CharacterRelation", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_CharacterRelation", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_CharacterRelationResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_CharacterRelation, type: "jbdb_CharacterRelation", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_CharacterRelation", options: string, successCallback: (result: RestNS.jbdb_CharacterRelationResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_Family, type: "jbdb_Family", successCallback: (result: RestNS.jbdb_FamilyResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_Family", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_Family", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_FamilyResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_Family, type: "jbdb_Family", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_Family", options: string, successCallback: (result: RestNS.jbdb_FamilyResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_FamilyHistory, type: "jbdb_FamilyHistory", successCallback: (result: RestNS.jbdb_FamilyHistoryResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_FamilyHistory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_FamilyHistory", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_FamilyHistoryResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_FamilyHistory, type: "jbdb_FamilyHistory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_FamilyHistory", options: string, successCallback: (result: RestNS.jbdb_FamilyHistoryResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_Location, type: "jbdb_Location", successCallback: (result: RestNS.jbdb_LocationResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_Location", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_Location", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_LocationResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_Location, type: "jbdb_Location", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_Location", options: string, successCallback: (result: RestNS.jbdb_LocationResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_LocationHistory, type: "jbdb_LocationHistory", successCallback: (result: RestNS.jbdb_LocationHistoryResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_LocationHistory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_LocationHistory", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_LocationHistoryResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_LocationHistory, type: "jbdb_LocationHistory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_LocationHistory", options: string, successCallback: (result: RestNS.jbdb_LocationHistoryResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_Region, type: "jbdb_Region", successCallback: (result: RestNS.jbdb_RegionResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_Region", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_Region", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_RegionResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_Region, type: "jbdb_Region", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_Region", options: string, successCallback: (result: RestNS.jbdb_RegionResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_Subterritory, type: "jbdb_Subterritory", successCallback: (result: RestNS.jbdb_SubterritoryResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_Subterritory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_Subterritory", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_SubterritoryResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_Subterritory, type: "jbdb_Subterritory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_Subterritory", options: string, successCallback: (result: RestNS.jbdb_SubterritoryResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.jbdb_Territory, type: "jbdb_Territory", successCallback: (result: RestNS.jbdb_TerritoryResult) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: "jbdb_Territory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: "jbdb_Territory", select: string | null, expand: string | null, successCallback: (result: RestNS.jbdb_TerritoryResult) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.jbdb_Territory, type: "jbdb_Territory", successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: "jbdb_Territory", options: string, successCallback: (result: RestNS.jbdb_TerritoryResult[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function createRecord(object: RestNS.RestEntity, type: string, successCallback: (result: RestNS.RestEntity) => any, errorCallback: (err: Error) => any): void;
+    function deleteRecord(id: string, type: string, successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveRecord(id: string, type: string, select: string | null, expand: string | null, successCallback: (result: RestNS.RestEntity) => any, errorCallback: (err: Error) => any): void;
+    function updateRecord(id: string, object: RestNS.RestEntity, type: string, successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function retrieveMultipleRecords(type: string, options: string, successCallback: (result: RestNS.RestEntity[]) => any, errorCallback: (err: Error) => any, onComplete: any): void;
+    function associateRecords(parentId: string, parentType: string, relationshipName: string, childId: string, childType: string, successCallBack: () => any, errorCallback: (err: Error) => any): void;
+    function disassociateRecords(parentId: string, parentType: string, relationshipName: string, childId: string, childType: string, successCallBack: () => any, errorCallback: (err: Error) => any): void;
+  }
+}
