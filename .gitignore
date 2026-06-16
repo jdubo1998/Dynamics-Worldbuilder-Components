@@ -1,0 +1,59 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+temp/
+out/
+*.map
+
+# Webpack cache
+.cache/
+webpack.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Power Platform CLI
+.pac/
+.pacCache/
+pac-auth.json
+MyTokenCache
+
+# VS Code
+.vscode/
+.history/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Solution exports
+*.zip
+*.cab
+*.dataverse
+*.solution.zip
+
+# Power Apps artifacts
+*.msapp
+*.msapp.backup
+*.msapp.tmp
+
+# PCF build output
+node_modules/
+out/
+generated/
+obj/
+bin/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
