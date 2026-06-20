@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DataverseModel
+namespace WorldBuilder.Model
 {
 	
 	
@@ -23,55 +23,44 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
 			public const string JBDB_Age = "jbdb_age";
 			public const string JBDB_Birthdate = "jbdb_birthdate";
+			public const string JBDB_BirthYear = "jbdb_birthyear";
 			public const string JBDB_Character_CurrentFamily_JBDB_Family = "jbdb_character_CurrentFamily_jbdb_family";
 			public const string JBDB_Character_CurrentLocation_JBDB_Location = "jbdb_character_CurrentLocation_jbdb_location";
+			public const string JBDB_Character_CurrentSubTerritory_JBDB_SubTerritory = "jbdb_character_CurrentSubterritory_jbdb_subterritory";
+			public const string JBDB_Character_CurrentTerritory_JBDB_Territory = "jbdb_character_CurrentTerritory_jbdb_territory";
 			public const string JBDB_CharacterId = "jbdb_characterid";
 			public const string Id = "jbdb_characterid";
 			public const string JBDB_CharacterRelation_CharacterFrom_JBDB_Character = "JBDB_CharacterRelation_CharacterFrom_JBDB_Character";
 			public const string JBDB_CharacterRelation_CharacterTo_JBDB_Character = "JBDB_CharacterRelation_CharacterTo_JBDB_Character";
 			public const string JBDB_CurrentFamily = "jbdb_currentfamily";
-			public const string JBDB_CurrentFamilyName = "jbdb_currentfamilyname";
 			public const string JBDB_CurrentLocation = "jbdb_currentlocation";
-			public const string JBDB_CurrentLocationName = "jbdb_currentlocationname";
+			public const string JBDB_CurrentSubTerritory = "jbdb_currentsubterritory";
+			public const string JBDB_CurrentTerritory = "jbdb_currentterritory";
 			public const string JBDB_FamilyHistory_Character_JBDB_Character = "JBDB_FamilyHistory_Character_JBDB_Character";
 			public const string JBDB_FirstName = "jbdb_firstname";
 			public const string JBDB_HeightInInches = "jbdb_heightininches";
 			public const string JBDB_HeroForgeUrl = "jbdb_heroforgeurl";
 			public const string JBDB_InFamilyTree = "jbdb_infamilytree";
-			public const string JBDB_InFamilyTreeName = "jbdb_infamilytreename";
 			public const string JBDB_Inspiration = "jbdb_inspiration";
 			public const string JBDB_IsHeroForgeComplete = "jbdb_isheroforgecomplete";
-			public const string JBDB_IsHeroForgeCompleteName = "jbdb_isheroforgecompletename";
 			public const string JBDB_LocationHistory_Character_JBDB_Character = "JBDB_LocationHistory_Character_JBDB_Character";
 			public const string JBDB_Name = "jbdb_name";
+			public const string JBDB_Title = "jbdb_title";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -129,40 +118,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -191,40 +146,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -273,6 +194,21 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("jbdb_birthdate", value);
+			}
+		}
+		
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_birthyear")]
+		public System.Nullable<int> JBDB_BirthYear
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<int>>("jbdb_birthyear");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_birthyear", value);
 			}
 		}
 		
@@ -332,23 +268,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentfamilyname")]
-		public string JBDB_CurrentFamilyName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_currentfamily"))
-				{
-					return this.FormattedValues["jbdb_currentfamily"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentlocation")]
 		public Microsoft.Xrm.Sdk.EntityReference JBDB_CurrentLocation
 		{
@@ -364,20 +283,33 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentlocationname")]
-		public string JBDB_CurrentLocationName
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentsubterritory")]
+		public Microsoft.Xrm.Sdk.EntityReference JBDB_CurrentSubTerritory
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				if (this.FormattedValues.Contains("jbdb_currentlocation"))
-				{
-					return this.FormattedValues["jbdb_currentlocation"];
-				}
-				else
-				{
-					return default(string);
-				}
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("jbdb_currentsubterritory");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_currentsubterritory", value);
+			}
+		}
+		
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentterritory")]
+		public Microsoft.Xrm.Sdk.EntityReference JBDB_CurrentTerritory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("jbdb_currentterritory");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_currentterritory", value);
 			}
 		}
 		
@@ -441,23 +373,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_infamilytreename")]
-		public string JBDB_InFamilyTreeName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_infamilytree"))
-				{
-					return this.FormattedValues["jbdb_infamilytree"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_inspiration")]
 		public string JBDB_Inspiration
 		{
@@ -488,23 +403,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_isheroforgecompletename")]
-		public string JBDB_IsHeroForgeCompleteName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_isheroforgecomplete"))
-				{
-					return this.FormattedValues["jbdb_isheroforgecomplete"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_name")]
 		public string JBDB_Name
 		{
@@ -520,6 +418,21 @@ namespace DataverseModel
 			}
 		}
 		
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_title")]
+		public string JBDB_Title
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("jbdb_title");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_title", value);
+			}
+		}
+		
 		/// <summary>
 		/// Unique identifier of the user who modified the record.
 		/// </summary>
@@ -530,40 +443,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedby");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -595,40 +474,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -669,46 +514,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -718,23 +523,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -782,23 +570,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Character
 		/// </summary>
@@ -814,23 +585,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -887,17 +641,17 @@ namespace DataverseModel
 		/// 1:N jbdb_characterrelation_CharacterFrom_jbdb_character
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_characterrelation_CharacterFrom_jbdb_character")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_CharacterRelation> JBDB_CharacterRelation_CharacterFrom_JBDB_Character
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_CharacterRelation> JBDB_CharacterRelation_CharacterFrom_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterFrom_jbdb_character", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterFrom_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterFrom_jbdb_character", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterFrom_jbdb_character", null, value);
 			}
 		}
 		
@@ -905,17 +659,17 @@ namespace DataverseModel
 		/// 1:N jbdb_characterrelation_CharacterTo_jbdb_character
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_characterrelation_CharacterTo_jbdb_character")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_CharacterRelation> JBDB_CharacterRelation_CharacterTo_JBDB_Character
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_CharacterRelation> JBDB_CharacterRelation_CharacterTo_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterTo_jbdb_character", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterTo_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterTo_jbdb_character", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_CharacterRelation>("jbdb_characterrelation_CharacterTo_jbdb_character", null, value);
 			}
 		}
 		
@@ -923,17 +677,17 @@ namespace DataverseModel
 		/// 1:N jbdb_familyhistory_Character_jbdb_character
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_familyhistory_Character_jbdb_character")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_FamilyHistory> JBDB_FamilyHistory_Character_JBDB_Character
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_FamilyHistory> JBDB_FamilyHistory_Character_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_FamilyHistory>("jbdb_familyhistory_Character_jbdb_character", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_FamilyHistory>("jbdb_familyhistory_Character_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_FamilyHistory>("jbdb_familyhistory_Character_jbdb_character", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_FamilyHistory>("jbdb_familyhistory_Character_jbdb_character", null, value);
 			}
 		}
 		
@@ -941,17 +695,17 @@ namespace DataverseModel
 		/// 1:N jbdb_locationhistory_Character_jbdb_character
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_locationhistory_Character_jbdb_character")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_LocationHistory> JBDB_LocationHistory_Character_JBDB_Character
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_LocationHistory> JBDB_LocationHistory_Character_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_LocationHistory>("jbdb_locationhistory_Character_jbdb_character", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_LocationHistory>("jbdb_locationhistory_Character_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_LocationHistory>("jbdb_locationhistory_Character_jbdb_character", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_LocationHistory>("jbdb_locationhistory_Character_jbdb_character", null, value);
 			}
 		}
 		
@@ -960,17 +714,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentfamily")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentFamily_jbdb_family")]
-		public DataverseModel.JBDB_Family JBDB_Character_CurrentFamily_JBDB_Family
+		public WorldBuilder.Model.JBDB_Family JBDB_Character_CurrentFamily_JBDB_Family
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Family>("jbdb_character_CurrentFamily_jbdb_family", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Family>("jbdb_character_CurrentFamily_jbdb_family", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Family>("jbdb_character_CurrentFamily_jbdb_family", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Family>("jbdb_character_CurrentFamily_jbdb_family", null, value);
 			}
 		}
 		
@@ -979,17 +733,55 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentlocation")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentLocation_jbdb_location")]
-		public DataverseModel.JBDB_Location JBDB_Character_CurrentLocation_JBDB_Location
+		public WorldBuilder.Model.JBDB_Location JBDB_Character_CurrentLocation_JBDB_Location
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Location>("jbdb_character_CurrentLocation_jbdb_location", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Location>("jbdb_character_CurrentLocation_jbdb_location", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Location>("jbdb_character_CurrentLocation_jbdb_location", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Location>("jbdb_character_CurrentLocation_jbdb_location", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// N:1 jbdb_character_CurrentSubterritory_jbdb_subterritory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentsubterritory")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentSubterritory_jbdb_subterritory")]
+		public WorldBuilder.Model.JBDB_SubTerritory JBDB_Character_CurrentSubTerritory_JBDB_SubTerritory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_SubTerritory>("jbdb_character_CurrentSubterritory_jbdb_subterritory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_SubTerritory>("jbdb_character_CurrentSubterritory_jbdb_subterritory", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// N:1 jbdb_character_CurrentTerritory_jbdb_territory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_currentterritory")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentTerritory_jbdb_territory")]
+		public WorldBuilder.Model.JBDB_Territory JBDB_Character_CurrentTerritory_JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_character_CurrentTerritory_jbdb_territory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_character_CurrentTerritory_jbdb_territory", null, value);
 			}
 		}
 		
@@ -1047,41 +839,26 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
 			public const string JBDB_CharacterFrom = "jbdb_characterfrom";
-			public const string JBDB_CharacterFromName = "jbdb_characterfromname";
 			public const string JBDB_CharacterRelation_CharacterFrom_JBDB_Character = "jbdb_characterrelation_CharacterFrom_jbdb_character";
 			public const string JBDB_CharacterRelation_CharacterTo_JBDB_Character = "jbdb_characterrelation_CharacterTo_jbdb_character";
 			public const string JBDB_CharacterRelationId = "jbdb_characterrelationid";
 			public const string Id = "jbdb_characterrelationid";
 			public const string JBDB_CharacterTo = "jbdb_characterto";
-			public const string JBDB_CharacterToName = "jbdb_charactertoname";
 			public const string JBDB_Name = "jbdb_name";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -1139,40 +916,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -1201,40 +944,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -1268,23 +977,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("jbdb_characterfrom", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_characterfromname")]
-		public string JBDB_CharacterFromName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_characterfrom"))
-				{
-					return this.FormattedValues["jbdb_characterfrom"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -1344,23 +1036,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_charactertoname")]
-		public string JBDB_CharacterToName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_characterto"))
-				{
-					return this.FormattedValues["jbdb_characterto"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_name")]
 		public string JBDB_Name
 		{
@@ -1386,40 +1061,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedby");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -1451,40 +1092,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -1525,46 +1132,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -1574,23 +1141,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -1638,23 +1188,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Character Relation
 		/// </summary>
@@ -1670,23 +1203,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -1744,17 +1260,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_characterfrom")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_characterrelation_CharacterFrom_jbdb_character")]
-		public DataverseModel.JBDB_Character JBDB_CharacterRelation_CharacterFrom_JBDB_Character
+		public WorldBuilder.Model.JBDB_Character JBDB_CharacterRelation_CharacterFrom_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_characterrelation_CharacterFrom_jbdb_character", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_characterrelation_CharacterFrom_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_characterrelation_CharacterFrom_jbdb_character", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_characterrelation_CharacterFrom_jbdb_character", null, value);
 			}
 		}
 		
@@ -1763,17 +1279,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_characterto")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_characterrelation_CharacterTo_jbdb_character")]
-		public DataverseModel.JBDB_Character JBDB_CharacterRelation_CharacterTo_JBDB_Character
+		public WorldBuilder.Model.JBDB_Character JBDB_CharacterRelation_CharacterTo_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_characterrelation_CharacterTo_jbdb_character", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_characterrelation_CharacterTo_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_characterrelation_CharacterTo_jbdb_character", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_characterrelation_CharacterTo_jbdb_character", null, value);
 			}
 		}
 		
@@ -1831,37 +1347,26 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
 			public const string JBDB_Character_CurrentFamily_JBDB_Family = "JBDB_Character_CurrentFamily_JBDB_Family";
+			public const string JBDB_Family_Territory_JBDB_Territory = "jbdb_family_Territory_jbdb_territory";
 			public const string JBDB_FamilyHistory_Family_JBDB_Family = "JBDB_FamilyHistory_Family_JBDB_Family";
 			public const string JBDB_FamilyId = "jbdb_familyid";
 			public const string Id = "jbdb_familyid";
 			public const string JBDB_Name = "jbdb_name";
+			public const string JBDB_Territory = "jbdb_territory";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -1919,40 +1424,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -1981,40 +1452,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2092,6 +1529,21 @@ namespace DataverseModel
 			}
 		}
 		
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_territory")]
+		public Microsoft.Xrm.Sdk.EntityReference JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("jbdb_territory");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_territory", value);
+			}
+		}
+		
 		/// <summary>
 		/// Unique identifier of the user who modified the record.
 		/// </summary>
@@ -2102,40 +1554,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedby");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2167,40 +1585,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2241,46 +1625,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -2290,23 +1634,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2354,23 +1681,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Family
 		/// </summary>
@@ -2386,23 +1696,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2459,17 +1752,17 @@ namespace DataverseModel
 		/// 1:N jbdb_character_CurrentFamily_jbdb_family
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentFamily_jbdb_family")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_Character> JBDB_Character_CurrentFamily_JBDB_Family
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Character> JBDB_Character_CurrentFamily_JBDB_Family
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_Character>("jbdb_character_CurrentFamily_jbdb_family", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentFamily_jbdb_family", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_Character>("jbdb_character_CurrentFamily_jbdb_family", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentFamily_jbdb_family", null, value);
 			}
 		}
 		
@@ -2477,17 +1770,36 @@ namespace DataverseModel
 		/// 1:N jbdb_familyhistory_Family_jbdb_family
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_familyhistory_Family_jbdb_family")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_FamilyHistory> JBDB_FamilyHistory_Family_JBDB_Family
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_FamilyHistory> JBDB_FamilyHistory_Family_JBDB_Family
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_FamilyHistory>("jbdb_familyhistory_Family_jbdb_family", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_FamilyHistory>("jbdb_familyhistory_Family_jbdb_family", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_FamilyHistory>("jbdb_familyhistory_Family_jbdb_family", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_FamilyHistory>("jbdb_familyhistory_Family_jbdb_family", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// N:1 jbdb_family_Territory_jbdb_territory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_territory")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_family_Territory_jbdb_territory")]
+		public WorldBuilder.Model.JBDB_Territory JBDB_Family_Territory_JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_family_Territory_jbdb_territory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_family_Territory_jbdb_territory", null, value);
 			}
 		}
 		
@@ -2545,42 +1857,27 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
 			public const string JBDB_Character = "jbdb_character";
-			public const string JBDB_CharacterName = "jbdb_charactername";
 			public const string JBDB_Family = "jbdb_family";
 			public const string JBDB_FamilyHistory_Character_JBDB_Character = "jbdb_familyhistory_Character_jbdb_character";
 			public const string JBDB_FamilyHistory_Family_JBDB_Family = "jbdb_familyhistory_Family_jbdb_family";
 			public const string JBDB_FamilyHistoryId = "jbdb_familyhistoryid";
 			public const string Id = "jbdb_familyhistoryid";
-			public const string JBDB_FamilyName = "jbdb_familyname";
 			public const string JBDB_Name = "jbdb_name";
 			public const string JBDB_StartDate = "jbdb_startdate";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -2638,40 +1935,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -2700,40 +1963,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2767,23 +1996,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("jbdb_character", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_charactername")]
-		public string JBDB_CharacterName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_character"))
-				{
-					return this.FormattedValues["jbdb_character"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -2843,23 +2055,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_familyname")]
-		public string JBDB_FamilyName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_family"))
-				{
-					return this.FormattedValues["jbdb_family"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_name")]
 		public string JBDB_Name
 		{
@@ -2903,40 +2098,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was modified.
 		/// </summary>
@@ -2965,40 +2126,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3039,46 +2166,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -3088,23 +2175,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3152,23 +2222,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Family History
 		/// </summary>
@@ -3184,23 +2237,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3258,17 +2294,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_character")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_familyhistory_Character_jbdb_character")]
-		public DataverseModel.JBDB_Character JBDB_FamilyHistory_Character_JBDB_Character
+		public WorldBuilder.Model.JBDB_Character JBDB_FamilyHistory_Character_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_familyhistory_Character_jbdb_character", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_familyhistory_Character_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_familyhistory_Character_jbdb_character", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_familyhistory_Character_jbdb_character", null, value);
 			}
 		}
 		
@@ -3277,17 +2313,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_family")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_familyhistory_Family_jbdb_family")]
-		public DataverseModel.JBDB_Family JBDB_FamilyHistory_Family_JBDB_Family
+		public WorldBuilder.Model.JBDB_Family JBDB_FamilyHistory_Family_JBDB_Family
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Family>("jbdb_familyhistory_Family_jbdb_family", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Family>("jbdb_familyhistory_Family_jbdb_family", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Family>("jbdb_familyhistory_Family_jbdb_family", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Family>("jbdb_familyhistory_Family_jbdb_family", null, value);
 			}
 		}
 		
@@ -3345,40 +2381,30 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
 			public const string JBDB_Character_CurrentLocation_JBDB_Location = "JBDB_Character_CurrentLocation_JBDB_Location";
+			public const string JBDB_Location_Region_JBDB_Region = "jbdb_location_Region_jbdb_region";
 			public const string JBDB_Location_SubTerritory_JBDB_SubTerritory = "jbdb_location_Subterritory_jbdb_subterritory";
+			public const string JBDB_Location_Territory_JBDB_Territory = "jbdb_location_Territory_jbdb_territory";
 			public const string JBDB_LocationHistory_Location_JBDB_Location = "JBDB_LocationHistory_Location_JBDB_Location";
 			public const string JBDB_LocationId = "jbdb_locationid";
 			public const string Id = "jbdb_locationid";
 			public const string JBDB_Name = "jbdb_name";
+			public const string JBDB_Region = "jbdb_region";
 			public const string JBDB_SubTerritory = "jbdb_subterritory";
-			public const string JBDB_SubTerritoryName = "jbdb_subterritoryname";
+			public const string JBDB_Territory = "jbdb_territory";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -3436,40 +2462,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -3498,40 +2490,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3609,6 +2567,21 @@ namespace DataverseModel
 			}
 		}
 		
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_region")]
+		public Microsoft.Xrm.Sdk.EntityReference JBDB_Region
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("jbdb_region");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_region", value);
+			}
+		}
+		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_subterritory")]
 		public Microsoft.Xrm.Sdk.EntityReference JBDB_SubTerritory
 		{
@@ -3624,20 +2597,18 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_subterritoryname")]
-		public string JBDB_SubTerritoryName
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_territory")]
+		public Microsoft.Xrm.Sdk.EntityReference JBDB_Territory
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				if (this.FormattedValues.Contains("jbdb_subterritory"))
-				{
-					return this.FormattedValues["jbdb_subterritory"];
-				}
-				else
-				{
-					return default(string);
-				}
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("jbdb_territory");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetAttributeValue("jbdb_territory", value);
 			}
 		}
 		
@@ -3651,40 +2622,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedby");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3716,40 +2653,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3790,46 +2693,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -3839,23 +2702,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -3903,23 +2749,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Location
 		/// </summary>
@@ -3935,23 +2764,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -4008,17 +2820,17 @@ namespace DataverseModel
 		/// 1:N jbdb_character_CurrentLocation_jbdb_location
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentLocation_jbdb_location")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_Character> JBDB_Character_CurrentLocation_JBDB_Location
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Character> JBDB_Character_CurrentLocation_JBDB_Location
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_Character>("jbdb_character_CurrentLocation_jbdb_location", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentLocation_jbdb_location", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_Character>("jbdb_character_CurrentLocation_jbdb_location", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentLocation_jbdb_location", null, value);
 			}
 		}
 		
@@ -4026,17 +2838,36 @@ namespace DataverseModel
 		/// 1:N jbdb_locationhistory_Location_jbdb_location
 		/// </summary>
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_locationhistory_Location_jbdb_location")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_LocationHistory> JBDB_LocationHistory_Location_JBDB_Location
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_LocationHistory> JBDB_LocationHistory_Location_JBDB_Location
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_LocationHistory>("jbdb_locationhistory_Location_jbdb_location", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_LocationHistory>("jbdb_locationhistory_Location_jbdb_location", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_LocationHistory>("jbdb_locationhistory_Location_jbdb_location", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_LocationHistory>("jbdb_locationhistory_Location_jbdb_location", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// N:1 jbdb_location_Region_jbdb_region
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_region")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Region_jbdb_region")]
+		public WorldBuilder.Model.JBDB_Region JBDB_Location_Region_JBDB_Region
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Region>("jbdb_location_Region_jbdb_region", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Region>("jbdb_location_Region_jbdb_region", null, value);
 			}
 		}
 		
@@ -4045,17 +2876,36 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_subterritory")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Subterritory_jbdb_subterritory")]
-		public DataverseModel.JBDB_SubTerritory JBDB_Location_SubTerritory_JBDB_SubTerritory
+		public WorldBuilder.Model.JBDB_SubTerritory JBDB_Location_SubTerritory_JBDB_SubTerritory
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_SubTerritory>("jbdb_location_Subterritory_jbdb_subterritory", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_SubTerritory>("jbdb_location_Subterritory_jbdb_subterritory", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_SubTerritory>("jbdb_location_Subterritory_jbdb_subterritory", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_SubTerritory>("jbdb_location_Subterritory_jbdb_subterritory", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// N:1 jbdb_location_Territory_jbdb_territory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_territory")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Territory_jbdb_territory")]
+		public WorldBuilder.Model.JBDB_Territory JBDB_Location_Territory_JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_location_Territory_jbdb_territory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_location_Territory_jbdb_territory", null, value);
 			}
 		}
 		
@@ -4113,42 +2963,27 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
 			public const string JBDB_Character = "jbdb_character";
-			public const string JBDB_CharacterName = "jbdb_charactername";
 			public const string JBDB_Location = "jbdb_location";
 			public const string JBDB_LocationHistory_Character_JBDB_Character = "jbdb_locationhistory_Character_jbdb_character";
 			public const string JBDB_LocationHistory_Location_JBDB_Location = "jbdb_locationhistory_Location_jbdb_location";
 			public const string JBDB_LocationHistoryId = "jbdb_locationhistoryid";
 			public const string Id = "jbdb_locationhistoryid";
-			public const string JBDB_LocationName = "jbdb_locationname";
 			public const string JBDB_Name = "jbdb_name";
 			public const string JBDB_StartDate = "jbdb_startdate";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -4206,40 +3041,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -4268,40 +3069,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -4335,23 +3102,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("jbdb_character", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_charactername")]
-		public string JBDB_CharacterName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_character"))
-				{
-					return this.FormattedValues["jbdb_character"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -4411,23 +3161,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_locationname")]
-		public string JBDB_LocationName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_location"))
-				{
-					return this.FormattedValues["jbdb_location"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_name")]
 		public string JBDB_Name
 		{
@@ -4471,40 +3204,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was modified.
 		/// </summary>
@@ -4533,40 +3232,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -4607,46 +3272,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -4656,23 +3281,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -4720,23 +3328,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Location History
 		/// </summary>
@@ -4752,23 +3343,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -4826,17 +3400,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_character")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_locationhistory_Character_jbdb_character")]
-		public DataverseModel.JBDB_Character JBDB_LocationHistory_Character_JBDB_Character
+		public WorldBuilder.Model.JBDB_Character JBDB_LocationHistory_Character_JBDB_Character
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_locationhistory_Character_jbdb_character", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_locationhistory_Character_jbdb_character", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Character>("jbdb_locationhistory_Character_jbdb_character", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Character>("jbdb_locationhistory_Character_jbdb_character", null, value);
 			}
 		}
 		
@@ -4845,17 +3419,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_location")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_locationhistory_Location_jbdb_location")]
-		public DataverseModel.JBDB_Location JBDB_LocationHistory_Location_JBDB_Location
+		public WorldBuilder.Model.JBDB_Location JBDB_LocationHistory_Location_JBDB_Location
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Location>("jbdb_locationhistory_Location_jbdb_location", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Location>("jbdb_locationhistory_Location_jbdb_location", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Location>("jbdb_locationhistory_Location_jbdb_location", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Location>("jbdb_locationhistory_Location_jbdb_location", null, value);
 			}
 		}
 		
@@ -4913,36 +3487,24 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
+			public const string JBDB_Location_Region_JBDB_Region = "JBDB_Location_Region_JBDB_Region";
 			public const string JBDB_Name = "jbdb_name";
 			public const string JBDB_RegionId = "jbdb_regionid";
 			public const string Id = "jbdb_regionid";
 			public const string JBDB_Territory_Region_JBDB_Region = "JBDB_Territory_Region_JBDB_Region";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -5000,40 +3562,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -5062,40 +3590,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -5186,40 +3680,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was modified.
 		/// </summary>
@@ -5248,40 +3708,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -5322,46 +3748,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -5371,23 +3757,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -5435,23 +3804,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Region
 		/// </summary>
@@ -5467,23 +3819,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -5537,20 +3872,38 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// 1:N jbdb_territory_Region_jbdb_region
+		/// 1:N jbdb_location_Region_jbdb_region
 		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_territory_Region_jbdb_region")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_Territory> JBDB_Territory_Region_JBDB_Region
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Region_jbdb_region")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Location> JBDB_Location_Region_JBDB_Region
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_Territory>("jbdb_territory_Region_jbdb_region", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Location>("jbdb_location_Region_jbdb_region", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_Territory>("jbdb_territory_Region_jbdb_region", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Location>("jbdb_location_Region_jbdb_region", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// 1:N jbdb_territory_Region_jbdb_region
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_territory_Region_jbdb_region")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Territory> JBDB_Territory_Region_JBDB_Region
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Territory>("jbdb_territory_Region_jbdb_region", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Territory>("jbdb_territory_Region_jbdb_region", null, value);
 			}
 		}
 		
@@ -5608,39 +3961,26 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
+			public const string JBDB_Character_CurrentSubTerritory_JBDB_SubTerritory = "JBDB_Character_CurrentSubTerritory_JBDB_SubTerritory";
 			public const string JBDB_Location_SubTerritory_JBDB_SubTerritory = "JBDB_Location_SubTerritory_JBDB_SubTerritory";
 			public const string JBDB_Name = "jbdb_name";
 			public const string JBDB_SubTerritory_Territory_JBDB_Territory = "jbdb_subterritory_Territory_jbdb_territory";
 			public const string JBDB_SubTerritoryId = "jbdb_subterritoryid";
 			public const string Id = "jbdb_subterritoryid";
 			public const string JBDB_Territory = "jbdb_territory";
-			public const string JBDB_TerritoryName = "jbdb_territoryname";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -5698,40 +4038,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -5760,40 +4066,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -5886,23 +4158,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_territoryname")]
-		public string JBDB_TerritoryName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_territory"))
-				{
-					return this.FormattedValues["jbdb_territory"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Unique identifier of the user who modified the record.
 		/// </summary>
@@ -5913,40 +4168,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedby");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -5978,40 +4199,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6052,46 +4239,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -6101,23 +4248,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6165,23 +4295,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Subterritory
 		/// </summary>
@@ -6197,23 +4310,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6267,20 +4363,38 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// 1:N jbdb_location_Subterritory_jbdb_subterritory
+		/// 1:N jbdb_character_CurrentSubterritory_jbdb_subterritory
 		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Subterritory_jbdb_subterritory")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_Location> JBDB_Location_SubTerritory_JBDB_SubTerritory
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentSubterritory_jbdb_subterritory")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Character> JBDB_Character_CurrentSubTerritory_JBDB_SubTerritory
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_Location>("jbdb_location_Subterritory_jbdb_subterritory", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentSubterritory_jbdb_subterritory", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_Location>("jbdb_location_Subterritory_jbdb_subterritory", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentSubterritory_jbdb_subterritory", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// 1:N jbdb_location_Subterritory_jbdb_subterritory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Subterritory_jbdb_subterritory")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Location> JBDB_Location_SubTerritory_JBDB_SubTerritory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Location>("jbdb_location_Subterritory_jbdb_subterritory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Location>("jbdb_location_Subterritory_jbdb_subterritory", null, value);
 			}
 		}
 		
@@ -6289,17 +4403,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_territory")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_subterritory_Territory_jbdb_territory")]
-		public DataverseModel.JBDB_Territory JBDB_SubTerritory_Territory_JBDB_Territory
+		public WorldBuilder.Model.JBDB_Territory JBDB_SubTerritory_Territory_JBDB_Territory
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Territory>("jbdb_subterritory_Territory_jbdb_territory", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_subterritory_Territory_jbdb_territory", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Territory>("jbdb_subterritory_Territory_jbdb_territory", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Territory>("jbdb_subterritory_Territory_jbdb_territory", null, value);
 			}
 		}
 		
@@ -6357,39 +4471,28 @@ namespace DataverseModel
 		public partial class Fields
 		{
 			public const string CreatedBy = "createdby";
-			public const string CreatedByName = "createdbyname";
-			public const string CreatedByYomiName = "createdbyyominame";
 			public const string CreatedOn = "createdon";
 			public const string CreatedOnBehalfBy = "createdonbehalfby";
-			public const string CreatedOnBehalfByName = "createdonbehalfbyname";
-			public const string CreatedOnBehalfByYomiName = "createdonbehalfbyyominame";
 			public const string ImportSequenceNumber = "importsequencenumber";
+			public const string JBDB_Character_CurrentTerritory_JBDB_Territory = "JBDB_Character_CurrentTerritory_JBDB_Territory";
+			public const string JBDB_Family_Territory_JBDB_Territory = "JBDB_Family_Territory_JBDB_Territory";
+			public const string JBDB_Location_Territory_JBDB_Territory = "JBDB_Location_Territory_JBDB_Territory";
 			public const string JBDB_Name = "jbdb_name";
 			public const string JBDB_Region = "jbdb_region";
-			public const string JBDB_RegionName = "jbdb_regionname";
 			public const string JBDB_SubTerritory_Territory_JBDB_Territory = "JBDB_SubTerritory_Territory_JBDB_Territory";
 			public const string JBDB_Territory_Region_JBDB_Region = "jbdb_territory_Region_jbdb_region";
 			public const string JBDB_TerritoryId = "jbdb_territoryid";
 			public const string Id = "jbdb_territoryid";
 			public const string ModifiedBy = "modifiedby";
-			public const string ModifiedByName = "modifiedbyname";
-			public const string ModifiedByYomiName = "modifiedbyyominame";
 			public const string ModifiedOn = "modifiedon";
 			public const string ModifiedOnBehalfBy = "modifiedonbehalfby";
-			public const string ModifiedOnBehalfByName = "modifiedonbehalfbyname";
-			public const string ModifiedOnBehalfByYomiName = "modifiedonbehalfbyyominame";
 			public const string OverriddenCreatedOn = "overriddencreatedon";
 			public const string OwnerId = "ownerid";
-			public const string OwnerIdName = "owneridname";
-			public const string OwnerIdYomiName = "owneridyominame";
 			public const string OwningBusinessUnit = "owningbusinessunit";
-			public const string OwningBusinessUnitName = "owningbusinessunitname";
 			public const string OwningTeam = "owningteam";
 			public const string OwningUser = "owninguser";
 			public const string StateCode = "statecode";
-			public const string StateCodename = "statecodename";
 			public const string StatusCode = "statuscode";
-			public const string StatusCodename = "statuscodename";
 			public const string TimeZoneRuleVersionNumber = "timezoneruleversionnumber";
 			public const string UtcConversionTimeZoneCode = "utcconversiontimezonecode";
 			public const string VersionNumber = "versionnumber";
@@ -6447,40 +4550,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyname")]
-		public string CreatedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdbyyominame")]
-		public string CreatedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdby"))
-				{
-					return this.FormattedValues["createdby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was created.
 		/// </summary>
@@ -6509,40 +4578,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("createdonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyname")]
-		public string CreatedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfbyyominame")]
-		public string CreatedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("createdonbehalfby"))
-				{
-					return this.FormattedValues["createdonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6591,23 +4626,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("jbdb_region", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_regionname")]
-		public string JBDB_RegionName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("jbdb_region"))
-				{
-					return this.FormattedValues["jbdb_region"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6665,40 +4683,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyname")]
-		public string ModifiedByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedbyyominame")]
-		public string ModifiedByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedby"))
-				{
-					return this.FormattedValues["modifiedby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Date and time when the record was modified.
 		/// </summary>
@@ -6727,40 +4711,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("modifiedonbehalfby", value);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyname")]
-		public string ModifiedOnBehalfByName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfbyyominame")]
-		public string ModifiedOnBehalfByYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("modifiedonbehalfby"))
-				{
-					return this.FormattedValues["modifiedonbehalfby"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6801,46 +4751,6 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridname")]
-		public string OwnerIdName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
-		/// Yomi name of the owner
-		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owneridyominame")]
-		public string OwnerIdYomiName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("ownerid"))
-				{
-					return this.FormattedValues["ownerid"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
-		/// <summary>
 		/// Unique identifier for the business unit that owns the record
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunit")]
@@ -6850,23 +4760,6 @@ namespace DataverseModel
 			get
 			{
 				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("owningbusinessunit");
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningbusinessunitname")]
-		public string OwningBusinessUnitName
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("owningbusinessunit"))
-				{
-					return this.FormattedValues["owningbusinessunit"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -6914,23 +4807,6 @@ namespace DataverseModel
 			}
 		}
 		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statecodename")]
-		public string StateCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statecode"))
-				{
-					return this.FormattedValues["statecode"];
-				}
-				else
-				{
-					return default(string);
-				}
-			}
-		}
-		
 		/// <summary>
 		/// Reason for the status of the Territory
 		/// </summary>
@@ -6946,23 +4822,6 @@ namespace DataverseModel
 			set
 			{
 				this.SetAttributeValue("statuscode", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
-			}
-		}
-		
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("statuscodename")]
-		public string StatusCodename
-		{
-			[System.Diagnostics.DebuggerNonUserCode()]
-			get
-			{
-				if (this.FormattedValues.Contains("statuscode"))
-				{
-					return this.FormattedValues["statuscode"];
-				}
-				else
-				{
-					return default(string);
-				}
 			}
 		}
 		
@@ -7016,20 +4875,74 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// 1:N jbdb_subterritory_Territory_jbdb_territory
+		/// 1:N jbdb_character_CurrentTerritory_jbdb_territory
 		/// </summary>
-		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_subterritory_Territory_jbdb_territory")]
-		public System.Collections.Generic.IEnumerable<DataverseModel.JBDB_SubTerritory> JBDB_SubTerritory_Territory_JBDB_Territory
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_character_CurrentTerritory_jbdb_territory")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Character> JBDB_Character_CurrentTerritory_JBDB_Territory
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntities<DataverseModel.JBDB_SubTerritory>("jbdb_subterritory_Territory_jbdb_territory", null);
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentTerritory_jbdb_territory", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntities<DataverseModel.JBDB_SubTerritory>("jbdb_subterritory_Territory_jbdb_territory", null, value);
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Character>("jbdb_character_CurrentTerritory_jbdb_territory", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// 1:N jbdb_family_Territory_jbdb_territory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_family_Territory_jbdb_territory")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Family> JBDB_Family_Territory_JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Family>("jbdb_family_Territory_jbdb_territory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Family>("jbdb_family_Territory_jbdb_territory", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// 1:N jbdb_location_Territory_jbdb_territory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_location_Territory_jbdb_territory")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_Location> JBDB_Location_Territory_JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_Location>("jbdb_location_Territory_jbdb_territory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_Location>("jbdb_location_Territory_jbdb_territory", null, value);
+			}
+		}
+		
+		/// <summary>
+		/// 1:N jbdb_subterritory_Territory_jbdb_territory
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_subterritory_Territory_jbdb_territory")]
+		public System.Collections.Generic.IEnumerable<WorldBuilder.Model.JBDB_SubTerritory> JBDB_SubTerritory_Territory_JBDB_Territory
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<WorldBuilder.Model.JBDB_SubTerritory>("jbdb_subterritory_Territory_jbdb_territory", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.SetRelatedEntities<WorldBuilder.Model.JBDB_SubTerritory>("jbdb_subterritory_Territory_jbdb_territory", null, value);
 			}
 		}
 		
@@ -7038,17 +4951,17 @@ namespace DataverseModel
 		/// </summary>
 		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("jbdb_region")]
 		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("jbdb_territory_Region_jbdb_region")]
-		public DataverseModel.JBDB_Region JBDB_Territory_Region_JBDB_Region
+		public WorldBuilder.Model.JBDB_Region JBDB_Territory_Region_JBDB_Region
 		{
 			[System.Diagnostics.DebuggerNonUserCode()]
 			get
 			{
-				return this.GetRelatedEntity<DataverseModel.JBDB_Region>("jbdb_territory_Region_jbdb_region", null);
+				return this.GetRelatedEntity<WorldBuilder.Model.JBDB_Region>("jbdb_territory_Region_jbdb_region", null);
 			}
 			[System.Diagnostics.DebuggerNonUserCode()]
 			set
 			{
-				this.SetRelatedEntity<DataverseModel.JBDB_Region>("jbdb_territory_Region_jbdb_region", null, value);
+				this.SetRelatedEntity<WorldBuilder.Model.JBDB_Region>("jbdb_territory_Region_jbdb_region", null, value);
 			}
 		}
 		

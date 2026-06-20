@@ -10,6 +10,10 @@ build/
 temp/
 out/
 *.map
+bin/
+obj/
+debug/
+release/
 
 # Webpack cache
 .cache/
@@ -28,6 +32,16 @@ MyTokenCache
 .vscode/
 .history/
 
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
 # Environment files
 .env
 .env.local
@@ -45,14 +59,22 @@ MyTokenCache
 *.msapp.tmp
 
 # PCF build output
-node_modules/
-out/
 generated/
-obj/
-bin/
 
 # Logs
 *.log
+storage_emulator.log
+
+# Test output
+TestResults/
+
+# Azure Functions local settings and secrets
+local.settings.json
+secrets.json
+
+# Plugin Registration Tool cache
+*.cache
+*.dataverse.config
 
 # OS files
 .DS_Store

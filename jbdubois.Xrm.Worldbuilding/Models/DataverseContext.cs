@@ -10,7 +10,7 @@
 
 [assembly: Microsoft.Xrm.Sdk.Client.ProxyTypesAssemblyAttribute()]
 
-namespace DataverseModel
+namespace WorldBuilder.Model
 {
 	
 	
@@ -29,101 +29,101 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_Character"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_Character"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_Character> JBDB_CharacterSet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_Character> JBDB_CharacterSet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_Character>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_Character>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_CharacterRelation"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_CharacterRelation"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_CharacterRelation> JBDB_CharacterRelationSet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_CharacterRelation> JBDB_CharacterRelationSet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_CharacterRelation>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_CharacterRelation>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_Family"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_Family"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_Family> JBDB_FamilySet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_Family> JBDB_FamilySet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_Family>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_Family>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_FamilyHistory"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_FamilyHistory"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_FamilyHistory> JBDB_FamilyHistorySet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_FamilyHistory> JBDB_FamilyHistorySet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_FamilyHistory>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_FamilyHistory>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_Location"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_Location"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_Location> JBDB_LocationSet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_Location> JBDB_LocationSet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_Location>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_Location>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_LocationHistory"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_LocationHistory"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_LocationHistory> JBDB_LocationHistorySet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_LocationHistory> JBDB_LocationHistorySet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_LocationHistory>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_LocationHistory>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_Region"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_Region"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_Region> JBDB_RegionSet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_Region> JBDB_RegionSet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_Region>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_Region>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_SubTerritory"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_SubTerritory"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_SubTerritory> JBDB_SubTerritorySet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_SubTerritory> JBDB_SubTerritorySet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_SubTerritory>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_SubTerritory>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.JBDB_Territory"/> entities.
+		/// Gets a binding to the set of all <see cref="WorldBuilder.Model.JBDB_Territory"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.JBDB_Territory> JBDB_TerritorySet
+		public System.Linq.IQueryable<WorldBuilder.Model.JBDB_Territory> JBDB_TerritorySet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.JBDB_Territory>();
+				return this.CreateQuery<WorldBuilder.Model.JBDB_Territory>();
 			}
 		}
 	}

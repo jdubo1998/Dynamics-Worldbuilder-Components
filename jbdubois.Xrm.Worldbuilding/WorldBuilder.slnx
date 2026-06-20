@@ -1,0 +1,18 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Base/">
+    <Project Path="Base/Base.shproj" Id="69c31d41-b719-4c35-937d-c49e2982ecec" />
+  </Folder>
+  <Folder Name="/Logic/">
+    <Project Path="Logic/Logic.shproj" Id="0778e10d-89e8-43be-ae65-2bb6b5cd7cb7" />
+  </Folder>
+  <Folder Name="/Models/">
+    <Project Path="Models/Models.shproj" Id="71b7462f-826d-44a3-8110-c3829593f196" />
+  </Folder>
+  <Folder Name="/Plugins/">
+    <Project Path="Plugins/WorldBuilder.csproj" />
+  </Folder>
+</Solution>

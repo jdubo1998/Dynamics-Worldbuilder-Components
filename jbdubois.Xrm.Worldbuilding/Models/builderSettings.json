@@ -121,7 +121,7 @@
   },
   "emitEntityETC": false,
   "emitFieldsClasses": true,
-  "emitVirtualAttributes": true,
+  "emitVirtualAttributes": false,
   "entityNamesFilter": [
     "jbdb_character",
     "jbdb_characterrelation",
@@ -135,14 +135,14 @@
   ],
   "entityTypesFolder": "Entities",
   "generateActions": true,
-  "generateGlobalOptionSets": false,
+  "generateGlobalOptionSets": true,
   "messageNamesFilter": [
     "analyze*"
   ],
   "messagesTypesFolder": "Messages",
   "metadataProviderService": "DLaB.ModelBuilderExtensions.MetadataProviderService,DLaB.ModelBuilderExtensions",
   "metadataQueryProviderService": "DLaB.ModelBuilderExtensions.MetadataQueryProviderService,DLaB.ModelBuilderExtensions",
-  "namespace": "DataverseModel",
+  "namespace": "WorldBuilder.Model",
   "namingService": "DLaB.ModelBuilderExtensions.NamingService,DLaB.ModelBuilderExtensions",
   "optionSetsTypesFolder": "OptionSets",
   "serviceContextName": "DataverseContext",
