@@ -1,6 +1,7 @@
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using System;
+using System.Diagnostics;
 
 namespace WorldBuilder.Base
 {
@@ -26,17 +27,19 @@ namespace WorldBuilder.Base
         private readonly IOrganizationService _service;
         private readonly IOrganizationService _adminService;
         private readonly ITracingService _tracingService;
+        private readonly string _className;
 
         public LogicBase(IOrganizationService service, IOrganizationService adminService, ITracingService tracingService)
         {
             _service = service;
             _adminService = adminService;
             _tracingService = tracingService;
+            _className = GetType().Name;
         }
 
         public LogicBase(LogicBase other) : this(other._service, other._adminService, other._tracingService) { }
 
-        public LogicBase(PluginBag bag) : this(bag.Service, bag.Service, bag.TracingService) { }
+        public LogicBase(IPluginBag bag) : this(bag.Service, bag.Service, bag.TracingService) { }
 
         public void Create(Entity entity)
         {
@@ -123,14 +126,14 @@ namespace WorldBuilder.Base
 
         public void Trace(string message)
         {
-            _tracingService.Trace(message);
+            _tracingService.Trace($"[{_className}]   " + message);
         }
 
         public void TraceJson(object obj)
         {
             var options = new System.Text.Json.JsonSerializerOptions { WriteIndented = true };
             var json = System.Text.Json.JsonSerializer.Serialize(obj, options);
-            _tracingService.Trace(json);
+            Trace(json);
         }
-}
+    }
 }

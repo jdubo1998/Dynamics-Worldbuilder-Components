@@ -21,7 +21,7 @@ namespace WorldBuilder.Plugins
             "WorldBuilder.Plugins.AutoNameFactoryPlugin: Create of Character",
             1,
             IsolationModeEnum.Sandbox,
-            Id = "42FEEA21-75A0-4D4B-85BE-B94572764F76"
+            Id = "AEAD1D21-C26C-F111-AB0D-000D3A37ED40"
         ),
         CrmPluginRegistration(
             MessageNameEnum.Update,
@@ -39,12 +39,7 @@ namespace WorldBuilder.Plugins
             Image1Attributes = JBDB_Character.Fields.JBDB_FirstName + "," + JBDB_Character.Fields.JBDB_CurrentFamily + ","
             + JBDB_Character.Fields.JBDB_CurrentTerritory + "," + JBDB_Character.Fields.JBDB_Inspiration + ","
             + JBDB_Character.Fields.JBDB_Title,
-            Image2Name = "PostImage",
-            Image2Type = ImageTypeEnum.PostImage,
-            Image2Attributes = JBDB_Character.Fields.JBDB_FirstName + "," + JBDB_Character.Fields.JBDB_CurrentFamily + ","
-            + JBDB_Character.Fields.JBDB_CurrentTerritory + "," + JBDB_Character.Fields.JBDB_Inspiration + ","
-            + JBDB_Character.Fields.JBDB_Title,
-            Id = "6D140707-3201-4922-B018-587190C24BAD"
+            Id = "3D36AC41-C26C-F111-AB0D-000D3A37ED40"
         )
     ]
 
@@ -52,7 +47,13 @@ namespace WorldBuilder.Plugins
     {
         public override void Execute(IPluginBag bag)
         {
-            ValidatePlugin(bag, GetType().Name, new string[] { "CREATE" }, new string[] { "POST" }, StageEnum.PreOperation, JBDB_Character.EntityLogicalName);
+            var pre = bag.PreImage;
+            var target = bag.Target;
+
+            target.ExtendMerge(pre);
+
+            var logic = AutoNameLogicFactory.Create(bag, target);
+            logic.AutoName(target);
         }
     }
 }

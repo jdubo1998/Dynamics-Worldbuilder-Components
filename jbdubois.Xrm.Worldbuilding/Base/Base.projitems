@@ -9,6 +9,7 @@
     <Import_RootNamespace>WorldBuilder.Base</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)EntityExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LogicBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PluginBag.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PluginBase.cs" />

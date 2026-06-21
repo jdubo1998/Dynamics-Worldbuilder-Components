@@ -9,8 +9,22 @@ using System.Threading.Tasks;
 
 namespace WorldBuilder.Logic
 {
+    public interface IAutoNameLogic
+    {
+        void AutoName(Entity entity);
+    }
+
     public class AutoNameLogicFactory
     {
-        
+        public static IAutoNameLogic Create(IPluginBag bag, Entity entity)
+        {
+            switch(entity.LogicalName)
+            {
+                case JBDB_Character.EntityLogicalName:
+                    return new CharacterAutoNameLogic(bag);
+                default:
+                    throw new NotImplementedException($"AutoName logic not implemented for Entity: {entity.LogicalName}");
+            }
+        }
     }
 }

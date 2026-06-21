@@ -11,12 +11,10 @@ namespace WorldBuilder.Base
         IPluginExecutionContext Context { get; }
         IOrganizationService Service { get; }
         ITracingService TracingService { get; }
-
         Entity PostImage { get; }
         Entity PreImage { get; }
         //Entity CombinedPost { get; }
         Entity Target { get; }
-
         void Trace(string message);
     }
 

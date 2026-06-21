@@ -10,5 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AutoNameLogicFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CharacterAutoNameLogic.cs" />
   </ItemGroup>
 </Project>
