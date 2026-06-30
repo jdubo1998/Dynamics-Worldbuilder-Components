@@ -1,0 +1,9 @@
+# Ignore auto-generated code
+generated/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore build outputs
+dist/
+out/

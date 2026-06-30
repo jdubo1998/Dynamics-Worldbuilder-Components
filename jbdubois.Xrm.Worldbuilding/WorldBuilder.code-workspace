@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "WebResources",
+			"path": "WebResources"
+		},
+		{
+			"name": "PCFs",
+			"path": "PCFs"
+		}
+	],
+	"settings": {
+		"js/ts.tsdk.path": "WebResources\\node_modules\\typescript\\lib"
+	}
+}

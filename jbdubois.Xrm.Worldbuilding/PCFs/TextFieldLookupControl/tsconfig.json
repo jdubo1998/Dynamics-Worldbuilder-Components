@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["powerapps-component-framework", "xrm"],
+    "typeRoots": ["node_modules/@types"]
+  }
+}

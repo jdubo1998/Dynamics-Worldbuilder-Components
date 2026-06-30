@@ -1,0 +1,9 @@
+{
+    "namespace": "JBDuBois.WorldBuilding",
+    "outDir": "./out/controls",
+    "controlName": "TextFieldLookupControl",
+    "pcfVersion": "1.0.0",
+    "externals": {
+        "@fluentui/react-components": "none"
+    }
+}
