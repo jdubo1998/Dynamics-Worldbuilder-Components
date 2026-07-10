@@ -15,6 +15,7 @@ declare namespace WebNs {
   interface jbdb_Subterritory_Relationships {
     jbdb_Territory?: jbdb_Territory_Result | null;
     jbdb_character_CurrentSubterritory_jbdb_subterritory?: jbdb_Character_Result[] | null;
+    jbdb_family_SubterritoryId_jbdb_subterritory?: jbdb_Family_Result[] | null;
     jbdb_location_Subterritory_jbdb_subterritory?: jbdb_Location_Result[] | null;
   }
   interface jbdb_Subterritory extends jbdb_Subterritory_Base, jbdb_Subterritory_Relationships {
@@ -73,6 +74,7 @@ declare namespace WebNs {
   interface jbdb_Subterritory_Expand {
     jbdb_Territory: WebExpand<jbdb_Subterritory_Expand, jbdb_Territory_Select, jbdb_Territory_Filter, { jbdb_Territory: jbdb_Territory_Result }>;
     jbdb_character_CurrentSubterritory_jbdb_subterritory: WebExpand<jbdb_Subterritory_Expand, jbdb_Character_Select, jbdb_Character_Filter, { jbdb_character_CurrentSubterritory_jbdb_subterritory: jbdb_Character_Result[] }>;
+    jbdb_family_SubterritoryId_jbdb_subterritory: WebExpand<jbdb_Subterritory_Expand, jbdb_Family_Select, jbdb_Family_Filter, { jbdb_family_SubterritoryId_jbdb_subterritory: jbdb_Family_Result[] }>;
     jbdb_location_Subterritory_jbdb_subterritory: WebExpand<jbdb_Subterritory_Expand, jbdb_Location_Select, jbdb_Location_Filter, { jbdb_location_Subterritory_jbdb_subterritory: jbdb_Location_Result[] }>;
   }
   interface jbdb_Subterritory_FormattedResult {
@@ -108,6 +110,7 @@ declare namespace WebNs {
   }
   interface jbdb_Subterritory_RelatedMany {
     jbdb_character_CurrentSubterritory_jbdb_subterritory: WebMappingRetrieve<WebNs.jbdb_Character_Select,WebNs.jbdb_Character_Expand,WebNs.jbdb_Character_Filter,WebNs.jbdb_Character_Fixed,WebNs.jbdb_Character_Result,WebNs.jbdb_Character_FormattedResult>;
+    jbdb_family_SubterritoryId_jbdb_subterritory: WebMappingRetrieve<WebNs.jbdb_Family_Select,WebNs.jbdb_Family_Expand,WebNs.jbdb_Family_Filter,WebNs.jbdb_Family_Fixed,WebNs.jbdb_Family_Result,WebNs.jbdb_Family_FormattedResult>;
     jbdb_location_Subterritory_jbdb_subterritory: WebMappingRetrieve<WebNs.jbdb_Location_Select,WebNs.jbdb_Location_Expand,WebNs.jbdb_Location_Filter,WebNs.jbdb_Location_Fixed,WebNs.jbdb_Location_Result,WebNs.jbdb_Location_FormattedResult>;
   }
 }

@@ -8,10 +8,12 @@ declare namespace WebNs {
     jbdb_characterid?: string | null;
     jbdb_firstname?: string | null;
     jbdb_heightininches?: number | null;
+    jbdb_heroforgecreationstage?: jbdb_character_jbdb_heroforgecreationstage | null;
     jbdb_heroforgeurl?: string | null;
     jbdb_infamilytree?: boolean | null;
     jbdb_inspiration?: string | null;
     jbdb_isheroforgecomplete?: boolean | null;
+    jbdb_lorecreationstage?: jbdb_generalcreativecreationstages | null;
     jbdb_name?: string | null;
     jbdb_title?: string | null;
     modifiedon?: Date | null;
@@ -59,10 +61,12 @@ declare namespace WebNs {
     jbdb_currentterritory_guid: WebAttribute<jbdb_Character_Select, { jbdb_currentterritory_guid: string | null }, { jbdb_currentterritory_formatted?: string }>;
     jbdb_firstname: WebAttribute<jbdb_Character_Select, { jbdb_firstname: string | null }, {  }>;
     jbdb_heightininches: WebAttribute<jbdb_Character_Select, { jbdb_heightininches: number | null }, {  }>;
+    jbdb_heroforgecreationstage: WebAttribute<jbdb_Character_Select, { jbdb_heroforgecreationstage: jbdb_character_jbdb_heroforgecreationstage | null }, { jbdb_heroforgecreationstage_formatted?: string }>;
     jbdb_heroforgeurl: WebAttribute<jbdb_Character_Select, { jbdb_heroforgeurl: string | null }, {  }>;
     jbdb_infamilytree: WebAttribute<jbdb_Character_Select, { jbdb_infamilytree: boolean | null }, {  }>;
     jbdb_inspiration: WebAttribute<jbdb_Character_Select, { jbdb_inspiration: string | null }, {  }>;
     jbdb_isheroforgecomplete: WebAttribute<jbdb_Character_Select, { jbdb_isheroforgecomplete: boolean | null }, {  }>;
+    jbdb_lorecreationstage: WebAttribute<jbdb_Character_Select, { jbdb_lorecreationstage: jbdb_generalcreativecreationstages | null }, { jbdb_lorecreationstage_formatted?: string }>;
     jbdb_name: WebAttribute<jbdb_Character_Select, { jbdb_name: string | null }, {  }>;
     jbdb_title: WebAttribute<jbdb_Character_Select, { jbdb_title: string | null }, {  }>;
     modifiedby_guid: WebAttribute<jbdb_Character_Select, { modifiedby_guid: string | null }, { modifiedby_formatted?: string }>;
@@ -94,10 +98,12 @@ declare namespace WebNs {
     jbdb_currentterritory_guid: XQW.Guid;
     jbdb_firstname: string;
     jbdb_heightininches: number;
+    jbdb_heroforgecreationstage: jbdb_character_jbdb_heroforgecreationstage;
     jbdb_heroforgeurl: string;
     jbdb_infamilytree: boolean;
     jbdb_inspiration: string;
     jbdb_isheroforgecomplete: boolean;
+    jbdb_lorecreationstage: jbdb_generalcreativecreationstages;
     jbdb_name: string;
     jbdb_title: string;
     modifiedby_guid: XQW.Guid;
@@ -134,6 +140,8 @@ declare namespace WebNs {
     jbdb_currentlocation_formatted?: string;
     jbdb_currentsubterritory_formatted?: string;
     jbdb_currentterritory_formatted?: string;
+    jbdb_heroforgecreationstage_formatted?: string;
+    jbdb_lorecreationstage_formatted?: string;
     modifiedby_formatted?: string;
     modifiedon_formatted?: string;
     modifiedonbehalfby_formatted?: string;
