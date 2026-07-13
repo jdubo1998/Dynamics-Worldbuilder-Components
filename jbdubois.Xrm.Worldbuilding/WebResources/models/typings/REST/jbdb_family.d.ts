@@ -17,17 +17,20 @@ declare namespace RestNS {
     VersionNumber?: number | null;
     jbdb_FamilyId?: string | null;
     jbdb_Name?: string | null;
+    jbdb_SubterritoryId?: SDK.EntityReference | null;
     jbdb_Territory?: SDK.EntityReference | null;
     statecode?: SDK.OptionSet<jbdb_family_statecode> | null;
     statuscode?: SDK.OptionSet<jbdb_family_statuscode> | null;
   }
   interface jbdb_Family extends jbdb_FamilyBase {
     jbdb_character_CurrentFamily_jbdb_family?: jbdb_Character[] | null;
+    jbdb_family_SubterritoryId_jbdb_subterritory?: jbdb_Subterritory | null;
     jbdb_family_Territory_jbdb_territory?: jbdb_Territory | null;
     jbdb_familyhistory_Family_jbdb_family?: jbdb_FamilyHistory[] | null;
   }
   interface jbdb_FamilyResult extends jbdb_FamilyBase {
     jbdb_character_CurrentFamily_jbdb_family?: SDK.Results<jbdb_CharacterResult> | null;
+    jbdb_family_SubterritoryId_jbdb_subterritory?: jbdb_Subterritory | null;
     jbdb_family_Territory_jbdb_territory?: jbdb_Territory | null;
     jbdb_familyhistory_Family_jbdb_family?: SDK.Results<jbdb_FamilyHistoryResult> | null;
   }
@@ -49,6 +52,7 @@ declare namespace RestNS {
     VersionNumber: RestAttribute<jbdb_Family_Select>;
     jbdb_FamilyId: RestAttribute<jbdb_Family_Select>;
     jbdb_Name: RestAttribute<jbdb_Family_Select>;
+    jbdb_SubterritoryId: RestAttribute<jbdb_Family_Select>;
     jbdb_Territory: RestAttribute<jbdb_Family_Select>;
     statecode: RestAttribute<jbdb_Family_Select>;
     statuscode: RestAttribute<jbdb_Family_Select>;
@@ -71,12 +75,14 @@ declare namespace RestNS {
     VersionNumber: number;
     jbdb_FamilyId: XQR.Guid;
     jbdb_Name: string;
+    jbdb_SubterritoryId: XQR.EntityReferenceFilter;
     jbdb_Territory: XQR.EntityReferenceFilter;
     statecode: XQR.ValueContainerFilter<jbdb_family_statecode>;
     statuscode: XQR.ValueContainerFilter<jbdb_family_statuscode>;
   }
   interface jbdb_Family_Expand {
     jbdb_character_CurrentFamily_jbdb_family: RestExpand<jbdb_Family_Select, jbdb_Character_Select>;
+    jbdb_family_SubterritoryId_jbdb_subterritory: RestExpand<jbdb_Family_Select, jbdb_Subterritory_Select>;
     jbdb_family_Territory_jbdb_territory: RestExpand<jbdb_Family_Select, jbdb_Territory_Select>;
     jbdb_familyhistory_Family_jbdb_family: RestExpand<jbdb_Family_Select, jbdb_FamilyHistory_Select>;
   }

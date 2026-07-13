@@ -13,11 +13,13 @@ declare namespace WebNs {
     versionnumber?: number | null;
   }
   interface jbdb_Family_Relationships {
+    jbdb_SubterritoryId?: jbdb_Subterritory_Result | null;
     jbdb_Territory?: jbdb_Territory_Result | null;
     jbdb_character_CurrentFamily_jbdb_family?: jbdb_Character_Result[] | null;
     jbdb_familyhistory_Family_jbdb_family?: jbdb_FamilyHistory_Result[] | null;
   }
   interface jbdb_Family extends jbdb_Family_Base, jbdb_Family_Relationships {
+    jbdb_SubterritoryId_bind$jbdb_subterritories?: string | null;
     jbdb_Territory_bind$jbdb_territories?: string | null;
     ownerid_bind$systemusers?: string | null;
     ownerid_bind$teams?: string | null;
@@ -33,6 +35,7 @@ declare namespace WebNs {
     importsequencenumber: WebAttribute<jbdb_Family_Select, { importsequencenumber: number | null }, {  }>;
     jbdb_familyid: WebAttribute<jbdb_Family_Select, { jbdb_familyid: string | null }, {  }>;
     jbdb_name: WebAttribute<jbdb_Family_Select, { jbdb_name: string | null }, {  }>;
+    jbdb_subterritoryid_guid: WebAttribute<jbdb_Family_Select, { jbdb_subterritoryid_guid: string | null }, { jbdb_subterritoryid_formatted?: string }>;
     jbdb_territory_guid: WebAttribute<jbdb_Family_Select, { jbdb_territory_guid: string | null }, { jbdb_territory_formatted?: string }>;
     modifiedby_guid: WebAttribute<jbdb_Family_Select, { modifiedby_guid: string | null }, { modifiedby_formatted?: string }>;
     modifiedon: WebAttribute<jbdb_Family_Select, { modifiedon: Date | null }, { modifiedon_formatted?: string }>;
@@ -55,6 +58,7 @@ declare namespace WebNs {
     importsequencenumber: number;
     jbdb_familyid: XQW.Guid;
     jbdb_name: string;
+    jbdb_subterritoryid_guid: XQW.Guid;
     jbdb_territory_guid: XQW.Guid;
     modifiedby_guid: XQW.Guid;
     modifiedon: Date;
@@ -71,6 +75,7 @@ declare namespace WebNs {
     versionnumber: number;
   }
   interface jbdb_Family_Expand {
+    jbdb_SubterritoryId: WebExpand<jbdb_Family_Expand, jbdb_Subterritory_Select, jbdb_Subterritory_Filter, { jbdb_SubterritoryId: jbdb_Subterritory_Result }>;
     jbdb_Territory: WebExpand<jbdb_Family_Expand, jbdb_Territory_Select, jbdb_Territory_Filter, { jbdb_Territory: jbdb_Territory_Result }>;
     jbdb_character_CurrentFamily_jbdb_family: WebExpand<jbdb_Family_Expand, jbdb_Character_Select, jbdb_Character_Filter, { jbdb_character_CurrentFamily_jbdb_family: jbdb_Character_Result[] }>;
     jbdb_familyhistory_Family_jbdb_family: WebExpand<jbdb_Family_Expand, jbdb_FamilyHistory_Select, jbdb_FamilyHistory_Filter, { jbdb_familyhistory_Family_jbdb_family: jbdb_FamilyHistory_Result[] }>;
@@ -79,6 +84,7 @@ declare namespace WebNs {
     createdby_formatted?: string;
     createdon_formatted?: string;
     createdonbehalfby_formatted?: string;
+    jbdb_subterritoryid_formatted?: string;
     jbdb_territory_formatted?: string;
     modifiedby_formatted?: string;
     modifiedon_formatted?: string;
@@ -95,6 +101,7 @@ declare namespace WebNs {
     "@odata.etag": string;
     createdby_guid: string | null;
     createdonbehalfby_guid: string | null;
+    jbdb_subterritoryid_guid: string | null;
     jbdb_territory_guid: string | null;
     modifiedby_guid: string | null;
     modifiedonbehalfby_guid: string | null;
@@ -104,6 +111,7 @@ declare namespace WebNs {
     owninguser_guid: string | null;
   }
   interface jbdb_Family_RelatedOne {
+    jbdb_SubterritoryId: WebMappingRetrieve<WebNs.jbdb_Subterritory_Select,WebNs.jbdb_Subterritory_Expand,WebNs.jbdb_Subterritory_Filter,WebNs.jbdb_Subterritory_Fixed,WebNs.jbdb_Subterritory_Result,WebNs.jbdb_Subterritory_FormattedResult>;
     jbdb_Territory: WebMappingRetrieve<WebNs.jbdb_Territory_Select,WebNs.jbdb_Territory_Expand,WebNs.jbdb_Territory_Filter,WebNs.jbdb_Territory_Fixed,WebNs.jbdb_Territory_Result,WebNs.jbdb_Territory_FormattedResult>;
   }
   interface jbdb_Family_RelatedMany {

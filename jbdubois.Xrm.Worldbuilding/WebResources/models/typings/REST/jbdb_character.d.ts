@@ -25,10 +25,12 @@ declare namespace RestNS {
     jbdb_CurrentTerritory?: SDK.EntityReference | null;
     jbdb_FirstName?: string | null;
     jbdb_HeightInInches?: number | null;
+    jbdb_HeroForgeCreationStage?: SDK.OptionSet<jbdb_character_jbdb_heroforgecreationstage> | null;
     jbdb_HeroForgeURL?: string | null;
     jbdb_InFamilyTree?: boolean | null;
     jbdb_Inspiration?: string | null;
     jbdb_IsHeroForgeComplete?: boolean | null;
+    jbdb_LoreCreationStage?: SDK.OptionSet<jbdb_generalcreativecreationstages> | null;
     jbdb_Name?: string | null;
     jbdb_Title?: string | null;
     statecode?: SDK.OptionSet<jbdb_character_statecode> | null;
@@ -80,10 +82,12 @@ declare namespace RestNS {
     jbdb_CurrentTerritory: RestAttribute<jbdb_Character_Select>;
     jbdb_FirstName: RestAttribute<jbdb_Character_Select>;
     jbdb_HeightInInches: RestAttribute<jbdb_Character_Select>;
+    jbdb_HeroForgeCreationStage: RestAttribute<jbdb_Character_Select>;
     jbdb_HeroForgeURL: RestAttribute<jbdb_Character_Select>;
     jbdb_InFamilyTree: RestAttribute<jbdb_Character_Select>;
     jbdb_Inspiration: RestAttribute<jbdb_Character_Select>;
     jbdb_IsHeroForgeComplete: RestAttribute<jbdb_Character_Select>;
+    jbdb_LoreCreationStage: RestAttribute<jbdb_Character_Select>;
     jbdb_Name: RestAttribute<jbdb_Character_Select>;
     jbdb_Title: RestAttribute<jbdb_Character_Select>;
     statecode: RestAttribute<jbdb_Character_Select>;
@@ -115,10 +119,12 @@ declare namespace RestNS {
     jbdb_CurrentTerritory: XQR.EntityReferenceFilter;
     jbdb_FirstName: string;
     jbdb_HeightInInches: number;
+    jbdb_HeroForgeCreationStage: XQR.ValueContainerFilter<jbdb_character_jbdb_heroforgecreationstage>;
     jbdb_HeroForgeURL: string;
     jbdb_InFamilyTree: boolean;
     jbdb_Inspiration: string;
     jbdb_IsHeroForgeComplete: boolean;
+    jbdb_LoreCreationStage: XQR.ValueContainerFilter<jbdb_generalcreativecreationstages>;
     jbdb_Name: string;
     jbdb_Title: string;
     statecode: XQR.ValueContainerFilter<jbdb_character_statecode>;

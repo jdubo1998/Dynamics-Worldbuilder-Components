@@ -23,11 +23,13 @@ declare namespace RestNS {
   }
   interface jbdb_Subterritory extends jbdb_SubterritoryBase {
     jbdb_character_CurrentSubterritory_jbdb_subterritory?: jbdb_Character[] | null;
+    jbdb_family_SubterritoryId_jbdb_subterritory?: jbdb_Family[] | null;
     jbdb_location_Subterritory_jbdb_subterritory?: jbdb_Location[] | null;
     jbdb_subterritory_Territory_jbdb_territory?: jbdb_Territory | null;
   }
   interface jbdb_SubterritoryResult extends jbdb_SubterritoryBase {
     jbdb_character_CurrentSubterritory_jbdb_subterritory?: SDK.Results<jbdb_CharacterResult> | null;
+    jbdb_family_SubterritoryId_jbdb_subterritory?: SDK.Results<jbdb_FamilyResult> | null;
     jbdb_location_Subterritory_jbdb_subterritory?: SDK.Results<jbdb_LocationResult> | null;
     jbdb_subterritory_Territory_jbdb_territory?: jbdb_Territory | null;
   }
@@ -77,6 +79,7 @@ declare namespace RestNS {
   }
   interface jbdb_Subterritory_Expand {
     jbdb_character_CurrentSubterritory_jbdb_subterritory: RestExpand<jbdb_Subterritory_Select, jbdb_Character_Select>;
+    jbdb_family_SubterritoryId_jbdb_subterritory: RestExpand<jbdb_Subterritory_Select, jbdb_Family_Select>;
     jbdb_location_Subterritory_jbdb_subterritory: RestExpand<jbdb_Subterritory_Select, jbdb_Location_Select>;
     jbdb_subterritory_Territory_jbdb_territory: RestExpand<jbdb_Subterritory_Select, jbdb_Territory_Select>;
   }
