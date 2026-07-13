@@ -2,8 +2,8 @@ param(
     [string]$CrmUrl = "https://jbduboisdefault.crm.dynamics.com"
 )
 
-$assemblyPath = ".\bin\Debug\JBDB.WorldBuilder.1.0.0.nupkg"
-$pluginId = "CE15DBC7-C16C-F111-AB0D-000D3A37ED40"
+$assemblyPath = ".\bin\Debug\WorldBuilder.Plugins.1.0.0.nupkg"
+$pluginId = "92bad49c-5a7b-f111-ab0e-000d3a5d3b04"
 
 Write-Host "*********   Upload Plugin Assembly   *********"
 

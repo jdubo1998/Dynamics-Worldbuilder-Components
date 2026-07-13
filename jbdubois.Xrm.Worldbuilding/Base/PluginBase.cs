@@ -1,5 +1,6 @@
 using Microsoft.Xrm.Sdk;
-using System.ServiceModel.Channels;
+using System;
+using System.Linq;
 
 namespace WorldBuilder.Base
 {
@@ -49,8 +50,8 @@ namespace WorldBuilder.Base
                 tracingService.Trace("Id: {0}", target.Id);
 
                 foreach (var attr in target.Attributes)
-                    if (attr.Value is not null and EntityReference)
-                        tracingService.Trace("   Target[{0}] = {1} ({2}) [{3}]", attr.Key, ((EntityReference)attr.Value).Name, ((EntityReference)attr.Value).LogicalName, ((EntityReference)attr.Value).Id);
+                    if (attr.Value != null && attr.Value is EntityReference reference)
+                        tracingService.Trace("   Target[{0}] = {1} ({2}) [{3}]", attr.Key, reference.Name, reference.LogicalName, reference.Id);
                     else if (attr.Value != null)
                         tracingService.Trace("   Target[{0}] = {1}", attr.Key, attr.Value);
             }
@@ -64,8 +65,8 @@ namespace WorldBuilder.Base
                 tracingService.Trace("Id: {0}", pre.Id);
 
                 foreach (var attr in pre.Attributes)
-                    if (attr.Value is not null and EntityReference)
-                        tracingService.Trace("   PreImage[{0}] = {1} ({2}) [{3}]", attr.Key, ((EntityReference)attr.Value).Name, ((EntityReference)attr.Value).LogicalName, ((EntityReference)attr.Value).Id);
+                    if (attr.Value != null && attr.Value is EntityReference reference)
+                        tracingService.Trace("   PreImage[{0}] = {1} ({2}) [{3}]", attr.Key, reference.Name, reference.LogicalName, reference.Id);
                     else if (attr.Value != null)
                         tracingService.Trace("   PreImage[{0}] = {1}", attr.Key, attr.Value);
             }
@@ -79,8 +80,8 @@ namespace WorldBuilder.Base
                 tracingService.Trace("Id: {0}", post.Id);
 
                 foreach (var attr in post.Attributes)
-                    if (attr.Value is not null and EntityReference)
-                        tracingService.Trace("   PostImage[{0}] = {1} ({2}) [{3}]", attr.Key, ((EntityReference)attr.Value).Name, ((EntityReference)attr.Value).LogicalName, ((EntityReference)attr.Value).Id);
+                    if (attr.Value != null && attr.Value is EntityReference reference)
+                        tracingService.Trace("   PostImage[{0}] = {1} ({2}) [{3}]", attr.Key, reference.Name, reference.LogicalName, reference.Id);
                     else if (attr.Value != null)
                         tracingService.Trace("   PostImage[{0}] = {1}", attr.Key, attr.Value);
             }

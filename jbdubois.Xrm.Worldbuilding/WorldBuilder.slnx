@@ -13,6 +13,6 @@
     <Project Path="Models/Models.shproj" Id="71b7462f-826d-44a3-8110-c3829593f196" />
   </Folder>
   <Folder Name="/Plugins/">
-    <Project Path="Plugins/WorldBuilder.csproj" />
+    <Project Path="Plugins/WorldBuilder.Plugins.csproj" />
   </Folder>
 </Solution>

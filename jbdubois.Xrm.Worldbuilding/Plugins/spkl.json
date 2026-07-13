@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "profile": "debug",
+      "assemblypath": "bin\\Debug\\net462",
+      "excludePluginSteps": false
+    }
+  ]
+}

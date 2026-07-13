@@ -1,25 +1,26 @@
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace WorldBuilder.Base
 {
     public interface ILogicBase
     {
-        public void Create(Entity entity);
-        public void Update(Entity entity);
-        public void Upsert(Entity entity);
-        public void Activate(Entity entity, int? statecode, int? statuscode);
-        public void Deactivate(Entity entity, int? statecode, int? statuscode);
-        public void Delete(Entity entity);
-        public void DeleteAsSystem(Entity entity);
-        public T Retrieve<T>(Guid id, string[] columns) where T : Entity;
-        public T RetrieveFirst<T>(QueryExpression query, string[] columns) where T : Entity;
-        public IEnumerable<T> RetrieveMultiple<T>(QueryExpression query) where T : Entity;
-        public void ThrowIf(bool condition, string message);
-        public void Trace(string message);
-        public void TraceJson(object obj);
+        void Create(Entity entity);
+        void Update(Entity entity);
+        void Upsert(Entity entity);
+        void Activate(Entity entity, int? statecode, int? statuscode);
+        void Deactivate(Entity entity, int? statecode, int? statuscode);
+        void Delete(Entity entity);
+        void DeleteAsSystem(Entity entity);
+        T Retrieve<T>(Guid id, string[] columns) where T : Entity;
+        T RetrieveFirst<T>(QueryExpression query, string[] columns) where T : Entity;
+        IEnumerable<T> RetrieveMultiple<T>(QueryExpression query) where T : Entity;
+        void ThrowIf(bool condition, string message);
+        void Trace(string message);
+        void TraceJson(object obj);
     }
 
     public abstract class LogicBase : ILogicBase
@@ -131,9 +132,9 @@ namespace WorldBuilder.Base
 
         public void TraceJson(object obj)
         {
-            var options = new System.Text.Json.JsonSerializerOptions { WriteIndented = true };
-            var json = System.Text.Json.JsonSerializer.Serialize(obj, options);
-            Trace(json);
+            //var options = new JsonSerializerOptions { WriteIndented = true };
+            //var json = JsonSerializer.Serialize(obj, options);
+            //Trace(json);
         }
     }
 }

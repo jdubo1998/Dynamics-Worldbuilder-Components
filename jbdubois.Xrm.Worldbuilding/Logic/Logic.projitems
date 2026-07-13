@@ -9,7 +9,12 @@
     <Import_RootNamespace>WorldBuilder.Logic</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AutoNameLogicFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CharacterAutoNameLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AutoName\AutoNameLogicFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AutoName\CharacterAutoNameLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AutoName\FamilyAutoName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AutoName\TerritoryAutoNameLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)AutoName\" />
   </ItemGroup>
 </Project>

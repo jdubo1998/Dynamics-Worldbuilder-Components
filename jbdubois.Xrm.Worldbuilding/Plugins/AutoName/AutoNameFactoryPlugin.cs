@@ -10,6 +10,7 @@ using WorldBuilder.Model;
 namespace WorldBuilder.Plugins
 {
     [
+        /* ---------   Character AutoName   --------- */
         CrmPluginRegistration(
             MessageNameEnum.Create,
             JBDB_Character.EntityLogicalName,
@@ -21,7 +22,7 @@ namespace WorldBuilder.Plugins
             "WorldBuilder.Plugins.AutoNameFactoryPlugin: Create of Character",
             1,
             IsolationModeEnum.Sandbox,
-            Id = "AEAD1D21-C26C-F111-AB0D-000D3A37ED40"
+            Id = "A297B711-237C-F111-AB0E-6045BD08CA61"
         ),
         CrmPluginRegistration(
             MessageNameEnum.Update,
@@ -39,7 +40,29 @@ namespace WorldBuilder.Plugins
             Image1Attributes = JBDB_Character.Fields.JBDB_FirstName + "," + JBDB_Character.Fields.JBDB_CurrentFamily + ","
             + JBDB_Character.Fields.JBDB_CurrentTerritory + "," + JBDB_Character.Fields.JBDB_Inspiration + ","
             + JBDB_Character.Fields.JBDB_Title,
-            Id = "3D36AC41-C26C-F111-AB0D-000D3A37ED40"
+            Id = "FDBA0037-237C-F111-AB0E-6045BD08CA61"
+        ),
+        CrmPluginRegistration(
+            MessageNameEnum.Update,
+            JBDB_Family.EntityLogicalName,
+            StageEnum.PostOperation,
+            ExecutionModeEnum.Synchronous,
+            JBDB_Family.Fields.JBDB_Name,
+            "WorldBuilder.Plugins.AutoNameFactoryPlugin: Update of Family Name",
+            1,
+            IsolationModeEnum.Sandbox,
+            Id = "4D4A395F-237C-F111-AB0E-6045BD08CA61"
+        ),
+        CrmPluginRegistration(
+            MessageNameEnum.Update,
+            JBDB_Territory.EntityLogicalName,
+            StageEnum.PostOperation,
+            ExecutionModeEnum.Synchronous,
+            JBDB_Family.Fields.JBDB_Name,
+            "WorldBuilder.Plugins.AutoNameFactoryPlugin: Update of Territory Name",
+            1,
+            IsolationModeEnum.Sandbox,
+            Id = "29669475-237C-F111-AB0E-6045BD08CA61"
         )
     ]
 

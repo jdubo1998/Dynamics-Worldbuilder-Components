@@ -64,6 +64,7 @@ generated/
 # Logs
 *.log
 storage_emulator.log
+Log*.txt
 
 # Test output
 TestResults/
@@ -79,3 +80,7 @@ secrets.json
 # OS files
 .DS_Store
 Thumbs.db
+
+# Tools
+*/Tools/spkl/*
+!*/Tools/spkl/README.txt

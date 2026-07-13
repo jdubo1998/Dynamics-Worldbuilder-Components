@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Microsoft.Xrm.Sdk;
 
 namespace WorldBuilder.Base
