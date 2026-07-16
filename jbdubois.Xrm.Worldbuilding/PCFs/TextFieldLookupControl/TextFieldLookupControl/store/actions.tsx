@@ -2,7 +2,7 @@ import { jbdb_Character } from "../typings/jbdb_Character";
 
 interface SET_TEXT_FIELD_VALUE {
     type: "SET_TEXT_FIELD_VALUE";
-    payload: string;
+    payload: string | null;
 }
 
 interface SET_CHARACTERS {

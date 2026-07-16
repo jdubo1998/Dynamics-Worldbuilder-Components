@@ -1,15 +1,15 @@
 import { IInputs } from "../generated/ManifestTypes";
+import { IAction } from "../store/actions";
 import { jbdb_Character } from "../typings/jbdb_Character";
 import { mock_jbdb_Characters } from "./mock/jbdb_Character.mock";
-import { isWatchMode } from "./mock/testHelper";
-import { globalDispatch } from "../store/globalStore";
 
-export const loadCharacters = async (context: ComponentFramework.Context<IInputs>): Promise<void> => {
-    console.log("****loadCharacters***");
-    if (isWatchMode(context)) {
-        console.log("***   WATCH MODE   ***\nLoading mock data...");
+const mockData = window.location.hostname === "localhost";
 
-        globalDispatch?.({
+export const loadCharacters = async (dispatch: React.Dispatch<IAction>): Promise<void> => {
+    if (mockData) {
+        console.log("***   MOCK MODE   ***\nLoading mock data...");
+
+        dispatch?.({
             type: "SET_CHARACTERS",
             payload: mock_jbdb_Characters
         });
@@ -19,16 +19,16 @@ export const loadCharacters = async (context: ComponentFramework.Context<IInputs
     
     console.log("***   LIVE MODE   ***\nLoading dataverse data...");
 
-    Xrm.WebApi.retrieveMultipleRecords<jbdb_Character>("jbdb_characters", "?$select=jbdb_firstname,jbdb_inspiration&$expand=jbdb_CurrentFamily($select=jbdb_name)")
+    Xrm.WebApi.retrieveMultipleRecords<jbdb_Character>("jbdb_character", "?$select=jbdb_firstname,jbdb_inspiration&$expand=jbdb_CurrentFamily($select=jbdb_name)")
     .then((results) => {
-        globalDispatch?.({
+        dispatch?.({
             type: "SET_CHARACTERS",
             payload: results?.entities ?? []
         });
         return;
     })
     .catch((err) => {
-        throw new Error("Failed to retrieve characters from dataverse.");
+        throw new Error(`Failed to retrieve characters from dataverse: ${err.message}`);
     });
 
     return Promise.resolve();

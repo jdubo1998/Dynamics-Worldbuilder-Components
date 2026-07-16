@@ -1,38 +1,34 @@
 import { StrictMode, useReducer, useEffect } from "react";
-import { GlobalDispatchContext, GlobalStoreContext } from "./globalStoreHelper";
+import { GlobalDispatchContext, GlobalStoreContext, IGlobalStateProps } from "./globalStoreHelper";
 import { reducer } from "./reducer";
 import { jbdb_Character } from "../typings/jbdb_Character";
-import { isWatchMode } from "../data/mock/testHelper";
 import { IAction } from "./actions";
+import { BaseComponent } from "../components/baseComponent";
 
 export interface IGlobalStoreProps {
-    characters: jbdb_Character[];
+    onTextFieldChange?: (value: string | null) => void;
+    textValue: string | null;
 }
 
-export let globalDispatch: React.Dispatch<IAction> | null = null;
-
-export const GlobalStoreProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
-    console.log("****GlobalStoreProvider***");
-    const initialState: IGlobalStoreProps = {
+// export const GlobalStoreProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
+export const GlobalStoreProvider = (props: IGlobalStoreProps) => {
+    const initialState: IGlobalStateProps = {
+        textValue: props.textValue,
         characters: []
     };
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
     useEffect(() => {
-        globalDispatch = dispatch;
-        return () => {
-            globalDispatch = null;
-        };
-    }, [dispatch]);
+        props.onTextFieldChange?.(state.textValue);
+    }, [state.textValue]);
 
     return (
-        <StrictMode>
-            <GlobalStoreContext.Provider value={state}>
-                <GlobalDispatchContext.Provider value={dispatch}>
-                    {children}
-                </GlobalDispatchContext.Provider>
-            </GlobalStoreContext.Provider>
-        </StrictMode>
+        <GlobalStoreContext.Provider value={state}>
+            <GlobalDispatchContext.Provider value={dispatch}>
+                <BaseComponent />
+                {/* {children} */}
+            </GlobalDispatchContext.Provider>
+        </GlobalStoreContext.Provider>
     );
 };

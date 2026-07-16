@@ -3,12 +3,15 @@ import { createRoot } from "react-dom/client";
 import { GlobalStoreProvider } from "./store/globalStore";
 import { BaseComponent } from "./components/baseComponent";
 import * as React from "react";
-import { loadCharacters } from "./data/dataLoader";
 
 export class TextFieldLookupControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
     private root: ReturnType<typeof createRoot> | undefined;
+    private reactTree: React.ReactElement;
     private notifyOutputChanged: () => void;
-        
+
+    /* Manifest Fields */
+    private _textValue: string | null = null;
+    
     /**
      * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
      * Data-set values are not initialized here, use updateView.
@@ -23,34 +26,26 @@ export class TextFieldLookupControl implements ComponentFramework.StandardContro
         container: HTMLDivElement
     ): void {
         this.notifyOutputChanged = notifyOutputChanged;
-
-        // console.log("context:", context);
-        // console.log("notifyOutputChanged:", notifyOutputChanged);
-        // console.log("state:", state);
-        // console.log("container:", container);
-        // console.log("container is connected:", container?.isConnected);
-        console.log(GlobalStoreProvider);
-        console.log(BaseComponent);
         this.root = createRoot(container);
-        console.log(this.root);
-        // this.root.render(React.createElement(
-        //     GlobalStoreProvider,
-        //     null,
-        //     React.createElement(BaseComponent, null)
-        // ));
-        try {
-            this.root.render(
-                React.createElement(
-                    GlobalStoreProvider,
-                    null,
-                    React.createElement(BaseComponent, null)
-                )
-            );
-        } catch (err) {
-            console.error("***** React render failed:", err);
-        }
 
-        // loadCharacters(context);
+        this._textValue = context.parameters.textFieldProperty.raw ?? "";
+
+        try {
+            this.reactTree = React.createElement(
+                GlobalStoreProvider,
+                {
+                    textValue: this._textValue,
+                    onTextFieldChange: (value: string | null) => {
+                        this._textValue = value;
+                        this.notifyOutputChanged();
+                    }
+                }
+            );
+
+            this.root.render(this.reactTree);
+        } catch (err) {
+            console.error("*** React render failed:", err);
+        }
     }
 
     /**
@@ -59,7 +54,7 @@ export class TextFieldLookupControl implements ComponentFramework.StandardContro
      * @returns ReactElement root react element for the control
      */
     public updateView(context: ComponentFramework.Context<IInputs>): void {
-        // const textFieldValue = context.parameters
+        // Empty updateView method.
     }
 
     /**
@@ -67,7 +62,9 @@ export class TextFieldLookupControl implements ComponentFramework.StandardContro
      * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
      */
     public getOutputs(): IOutputs {
-        return { };
+        return {
+            textFieldProperty: this._textValue ?? ""
+        };
     }
 
     /**

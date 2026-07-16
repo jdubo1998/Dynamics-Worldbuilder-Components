@@ -1,17 +1,17 @@
 import { IAction } from "./actions";
-import { IGlobalStoreProps } from "./globalStore";
+import { IGlobalStateProps } from "./globalStoreHelper";
 
-export const reducer = (store: IGlobalStoreProps, action: IAction) => {
+export const reducer = (store: IGlobalStateProps, action: IAction) => {
     switch (action.type) {
         case "SET_TEXT_FIELD_VALUE":
             return {
                 ...store,
-                name: action.payload
+                textValue: action.payload
             };
         case "SET_CHARACTERS":
             return {
                 ...store,
-                name: action.payload
+                characters: action.payload
             };
         default:
             alert("Reducer received unknown action type");
